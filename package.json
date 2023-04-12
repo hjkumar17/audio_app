@@ -1,0 +1,18 @@
+{
+  "name": "audio_app",
+  "version": "1.0.0",
+  "description": "An audio app using WebRTC",
+  "scripts": {
+    "start": "nodemon server.js && npm run peerServer",
+    "peerServer":"peerjs --port 443 --key peerjs --path /myapp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "HJS Production",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "peer": "^0.5.3",
+    "peerjs": "^1.3.1"
+  }
+}
